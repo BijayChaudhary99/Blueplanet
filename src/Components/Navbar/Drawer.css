@@ -1,0 +1,98 @@
+ul{
+    padding: 2rem;
+}
+
+.d-name{
+        color: rgb(0, 76, 175);
+        font-size: 2rem;
+        font-weight: 800;
+        margin-left: 1rem;
+        margin-bottom: 1.5rem;
+}
+
+
+.d-dropdown .d-dropbtn {
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    color: rgb(255, 255, 255);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.d-dropbtn a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.d-dropdown:hover .d-dropbtn {
+    border-radius: 10px;
+    background-color: rgb(255, 0, 0);
+    color: #f9f9f9;
+    
+}
+
+.d-dropdown-content {
+    display: none;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.d-dropdown-content a {
+    color: rgb(46, 46, 46);
+    padding: 12px 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: block;
+    font-weight:700;
+    text-align: left;
+    transition: 0.6s ease;
+}
+
+.d-dropdown-content a:hover {
+    transition: 0.3s ease;
+    background-color: #7c7c7c;
+}
+
+.d-dropdown:hover .d-dropdown-content {
+    display: block;
+}
+
+.d-button {
+    padding: 1rem;
+    font-size: 16px;
+    font-weight: 800;
+    border: none;
+    outline: none;
+    color: rgb(255, 0, 0);
+    font-family: inherit;
+    float: center;
+    background-color: rgb(255, 255, 255);
+    margin-left: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 10px;
+    transition: 0.2s ease;
+    width: 100%;
+}
+
+.d-button:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+    border: 2px solid;
+    border-radius: 10px;
+}
+

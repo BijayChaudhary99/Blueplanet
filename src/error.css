@@ -1,0 +1,36 @@
+/* error-page.css */
+
+#error-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    /* Change this to your preferred background color */
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+#error-page h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#error-page p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#error-page i {
+    font-style: italic;
+    color: #ff5a5a;
+    /* Change this to your preferred accent color */
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    #error-page {
+        padding: 2rem;
+    }
+}

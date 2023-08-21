@@ -1,0 +1,79 @@
+.t-section{
+    background-color: rgb(207, 207, 207);
+    transition: top 0.3s;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.t-section.hidden {
+    top: -40px;
+}
+.t-wrapper {
+    height: 50px;
+    display: flex;
+    position: relative;
+    font-size: 16px;
+    justify-content: space-between;
+    background-color: rgb(207, 207, 207);
+    box-shadow: 0 1px 0px 0 rgba(0, 0, 0, .3);
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.t-right {
+    flex: 1;
+    align-items: right;
+    justify-content: right;
+    display: flex;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.t-button {
+    font-size: 16px;
+    font-weight: 800;
+    border: none;
+    outline: none;
+    color: rgb(255, 0, 0);
+    font-family: inherit;
+    float: center;
+    background-color: rgb(255, 0, 0);
+    margin: 6px;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 12px;
+    transition: 0.2s ease;
+}
+.t-button a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.t-button a:hover {
+    color: rgb(189, 189, 189);
+    cursor: pointer;
+}
+
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    text-align: left;
+}
+
+.social-icons a {
+    color: rgb(87, 87, 87);
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 0 10px;
+}
+
+.social-icons :hover {
+    color: rgb(172, 0, 0);
+    cursor: pointer;
+    background-color: inherit;
+}

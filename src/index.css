@@ -1,0 +1,510 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0px;
+  --red: #ff0000;
+  --orange: #e29939;
+  --black: #1b1a1a;
+  --grey: #313131;
+  --blueCard: #527ddb;
+  --purple: #895599;
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --orangeCard: rgba(252, 166, 31, 0.45);
+  --amboxShadow: -79px 51px 60px rgb(0 0 0 / 0.08);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Create a utility class for max-width containers */
+.max-width-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+/* Create a utility class for text centering */
+.text-center {
+  text-align: center;
+}
+
+/* Create a utility class for flexbox centering */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Apply basic link styles */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* Apply default button styles */
+.button {
+  font-size: 16px;
+  font-weight: 800;
+  border: none;
+  outline: none;
+  color: rgb(255, 0, 0);
+  font-family: inherit;
+  float: center;
+  background-color: rgb(255, 255, 255);
+  margin: 2px;
+  text-align: center;
+  border: 2px solid;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+
+.button:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  background-color: rgb(255, 0, 0);
+  border: 2px solid;
+}
+
+.button a {
+  text-decoration: none;
+  color: inherit;
+  transition: inherit;
+}
+
+/* Style form elements */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #dadada1a;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Create utility classes for spacing */
+.mt-1 {
+  margin-top: 0.5rem;
+}
+
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+/* Apply basic styles for headings */
+h1,
+h2,
+h3 {
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #353535;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #424242;
+}
+
+p{
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Apply default styling to lists */
+ul,
+ol {
+  margin: 0;
+  padding: 2rem;
+  list-style: none;
+}
+
+/* Style list items */
+li {
+  margin-bottom: 5px;
+  padding-left: 20px;
+  position: relative;
+}
+
+li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+}
+
+/* Create utility classes for responsive breakpoints */
+@media screen and (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .hide-tablet {
+    display: none;
+  }
+}
+
+/* Add custom animation styles */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply basic styles for horizontal rules */
+hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid var(--secondary-color);
+}
+
+/* Apply default styling to blockquotes */
+blockquote {
+  border-left: 4px solid var(--primary-color);
+  margin: 0;
+  padding: 10px 20px;
+}
+
+/* Style inline code */
+code {
+  background-color: #f4f4f4;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-family: Consolas, monospace;
+}
+
+/* Create utility classes for text alignment */
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Create utility classes for font weights */
+.font-bold {
+  font-weight: bold;
+}
+
+.font-light {
+  font-weight: lighter;
+}
+
+/* Apply responsive font sizes */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+/* Add custom transition effect */
+.transition {
+  transition: all 0.3s ease;
+}
+
+/* Add custom utility classes for spacing */
+.px-1 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.px-2 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.py-1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.py-2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+/* Apply default styling to images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style links that open in a new tab/window */
+a[target="_blank"]::after {
+  content: "↗";
+  margin-left: 5px;
+  opacity: 0.7;
+}
+
+/* Create utility classes for vertical spacing */
+.mt-3 {
+  margin-top: 1.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 1.5rem;
+}
+
+/* Apply responsive padding for small screens */
+@media screen and (max-width: 576px) {
+  .px-sm-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .px-sm-2 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .py-sm-1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .py-sm-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+/* Create utility classes for width */
+.w-100 {
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+/* Create utility classes for height */
+.h-100 {
+  height: 100%;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+
+/* Apply default styling to form labels */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--primary-color);
+}
+
+/* Style input placeholders */
+::placeholder {
+  color: #999;
+}
+
+/* Style select dropdowns */
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Apply default styling to checkboxes and radio buttons */
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Apply custom styling to table rows on hover */
+table tr:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Create utility classes for vertical alignment */
+.valign-middle {
+  vertical-align: middle;
+}
+
+.valign-top {
+  vertical-align: top;
+}
+
+.valign-bottom {
+  vertical-align: bottom;
+}
+
+/* Apply responsive font styles for larger screens */
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+/* global.css */
+
+/* ... (previous styles) */
+
+/* Apply default styling to input labels */
+label {
+  display: block;
+  font-size: 14px;
+  color: #1b1a1a;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--primary-color);
+}
+
+/* Apply default styling to input fields */
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Apply styling to form placeholders */
+::placeholder {
+  color: #999;
+}
+
+/* Style select dropdowns */
+select {
+  appearance: none;
+  background: url('path-to-images/arrow-down.png') no-repeat right center;
+  background-size: 20px 20px;
+  padding-right: 30px;
+}
+
+/* Create utility classes for margin and padding */
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.py-3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Apply responsive styling for large screens */
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+/* ... (continue adding more global styles as needed) */
+

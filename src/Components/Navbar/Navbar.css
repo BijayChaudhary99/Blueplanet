@@ -1,0 +1,198 @@
+:root{
+    color:rgb(17, 16, 16);
+    font-family: "Helvetica Neue",Helvetica;
+    font-weight: 800;
+}
+.n-wrap{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 6;
+    transition: top 0.3s;
+}
+
+.n-wrap.initial {
+    top: 40px;
+}
+.n-wrap.fixed {
+    top: 0;
+    left: 0;
+}
+.n-wrapper {
+    height: 5rem;
+    display: flex;
+    position: relative;
+    font-size: 16px;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.n-left {
+    flex: 1;
+    align-items: left;
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.3rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    position: relative;
+    
+}
+
+.n-name{
+    font-size: 2rem;
+    color: rgba(0, 26, 99, 0.856);
+    font-weight: 800;
+}
+
+.n-center{
+    flex: 1;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    position: relative;
+    margin-top: 1px;
+    @media (max-width: 1300px) {
+            display: none;
+    }
+    
+}
+
+.n-list{
+    flex: 10;
+}
+
+.n-list > ul{
+    display: flex;
+    margin-right: 4rem;
+
+}
+
+.n-list> ul > li:hover{
+    cursor: pointer;
+    color: blue;
+}
+
+.n-right{
+    flex:1;
+    align-items: right;
+    justify-content: right;
+    display: flex;
+    margin: 6px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    color: rgb(66, 66, 66);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+}
+
+.navbar a:hover {
+    background-color: red;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(255, 0, 0);
+    color: #f9f9f9;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 4;
+}
+
+.dropdown-content a {
+    float: none;
+    color: rgb(3, 2, 2);
+    padding: 12px 16px;
+    text-decoration: none;
+    border-radius: 10px;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    color: rgb(3, 2, 2);
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.button {
+    font-size: 16px;
+    font-weight: 800;
+    border: none;
+    outline: none;
+    color: rgb(255, 0, 0);
+    font-family: inherit;
+    float: center;
+    background-color: rgb(255, 255, 255);
+    margin: 2px;
+    text-align: center;
+    border: 2px solid ;
+    border-radius: 10px;
+    transition: 0.2s ease;
+}
+
+.button:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+    border: 2px solid;
+}
+
+.dropbtn a,
+.button a {
+    padding: 2px;
+    text-decoration: none;
+    color: inherit;
+    transition: inherit;
+}
+
+/* Style the link color when hovered */
+.dropbtn a:hover,
+.button a:hover {
+    color: rgb(255, 255, 255);
+    /* Match the hover color of the button */
+}
+
+.drawerbutton{
+    all:unset;
+    font-size: 2.5rem;
+    display: grid;
+    margin-left: 1rem;
+    align-items: center;
+    color: #0e0d0d;
+    border-radius: 10px;
+    @media (min-width: 1300px) {
+        display: none;
+    }
+}
